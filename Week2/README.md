@@ -24,21 +24,21 @@ I'm running through sounds rn - i made a masterlist
 
 trying to stack sounds
 
-''stack [
+``stack [
 note (arp "updown" "<f'maj7 ab'maj7 g'min7 f'maj7>") # s "gab",
-# s bottle ]''
+# s bottle ]``
 
 it reall annoys me how theres a break in between the chords every round in some circumstances but not in others
 
 jeez all these sounds are popping
 
 then i had this
-stack [
+``stack [
 note (arp "updown" "<f'maj7 a'maj7>") # s "moog" # pan sine, 
 s "bottle*4" #pan square, 
 s "bubble" #gain 1.2,
 s "bd bd bd bd" # gain 1.1"
-]
+]``
 
 which has a syntax error and im not sure why
 
@@ -53,14 +53,14 @@ s "bd bd bd bd" # gain 1.1
 
 it just doesnt like when i stack drums within a list so i made two and added bird sounds
 
-stack [
+``stack [
 note (arp "updown" "<f'maj7 a'maj7>") # s "moog" # pan sine,
 s "bottle*4" #pan square, 
 s "bubble" #gain 1.2,
 s "hh hh hh hh hh hh" # gain 1.1,
 s " bd bd? ~ sd ~ ~",
 s "birds" # gain 0.5
-]
+]``
 
 ```stack [
 note (arp "updown" "<f'maj7 a'maj7>") # s "moog" # pan sine,
