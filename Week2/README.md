@@ -71,4 +71,9 @@ s "birds" # gain 0.5``
 added some counterpoint, and a good beat that matches the arp. and calling it good :)
 
 
-
+panning first line sine and second cosine so they hae a cool panning effect
+panning the asmt sound squae so it goes from ear to ear
+turned the bubble sound up
+got some hi hats, 6 so it would match the arp pattern
+used silence to make drums hit at the right time
+added some birds for fun and turned them down
