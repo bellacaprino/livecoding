@@ -24,10 +24,9 @@ I'm running through sounds rn - i made a masterlist
 
 trying to stack sounds
 
-`` stack [
+``stack [
 note (arp "updown" "<f'maj7 ab'maj7 g'min7 f'maj7>") # s "gab",
-# s bottle ]
-``
+# s bottle ]``
 
 it reall annoys me how theres a break in between the chords every round in some circumstances but not in others
 
