@@ -1,0 +1,106 @@
+
+-- intro
+once $ s "advtime:2"
+ -- # octer 0.4
+# ring 0.5
+# delay 2
+# room 1
+-- # phasr 4
+# xsdelay 0.10
+# gain 0.8
+
+panic
+
+-- cartoon network
+d12 $ slice 20 "17" $ sound "advtime:2"
+  # legato 2
+  # gain 1.1
+
+
+d1 $ n ("~ 8 2 [3 2]" |+ irand 5) # s "jungbass"
+# vowel "a e i o u"
+# gain 0.6
+# hpf 10
+
+-- printer rhythm
+
+d2 $ n ("1 ~ 2 ~" |+ irand 11) # s "print"
+
+d3 $ stitch "t f t t f f t f" (sound "print:4") (sound "bd")
+
+d7 $ s "hh*16?"
+# distort 3
+# gain 0.9
+
+--arp
+
+d4 $ n "0 3 5 8 0 3 5 8"
+  # s "superhammond"
+  # voice 1
+  # gain 0.7
+  -- # distort 1
+
+  -- raise gain
+
+d4 $ n "0 5 3 0 5 3 5 8"
+    # s "superhammond"
+    # voice 1
+    # gain 0.7
+    # distort 1
+
+d4 $ n "3 5 8 7 0 3 5 8"
+    # s "superhammond"
+    # voice 1
+    # gain 0.7
+    # distort 1
+
+d5 $ n "0 5 0 5"
+    # s "superhammond"
+    # voice 3
+    # gain 0.7
+    # distort 0.5
+
+d5 $ n "0 8 5 0"
+    # s "superhammond"
+    # voice 3
+    # gain 0.7
+    # distort 0.5
+
+
+-- kick and snare
+
+d11 $ stack [
+  sound "bd bd",
+  sound "sd"
+] # gain 1.0
+# room 0.2
+
+hush
+
+-- fall
+d8 $ s "advtime:4"
+  # gain 0.8
+
+-- oh my glob
+once $ s "advtime:1"
+  # gain 0.9
+
+-- suckin at something
+once $ s "advtime:3"
+  # gain 0.9
+
+-- algebraic
+once $ s "advtime:0"
+    # gain 0.8
+
+-- random slice of theme
+d10 $ randslice 32 $ sound "advtime:2"
+  # gain 0.6
+  # room 2.0
+
+-- cut up song loop
+d13 $ slice 20 "13" $ sound "advtime:2"
+  # legato 2
+  # gain 1.1
+
+hush
